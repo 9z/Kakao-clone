@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>Element State</title>
+    <style>
+    .box{
+      width: 500px;
+      height: 500px;
+      background-color: red;
+      animation: 5s scaleAndRotateSquare infinite ease-in-out;
+    }
+    /*@keyframes는 애니메이션을 생성했다는 것을 알려줌
+    그 뒤에 생성할 애니메이션 이름을 적으면 됨  */
+    @keyframes scaleAndRotateSquare {
+      0%{
+        transform: none;
+      }
+      50%{
+        transform: rotate(1turn) scale(.5, .5);
+        font-size: 100px;
+        color: white;
+      }
+      100%{
+        transform: none;
+        color: blue;
+
+      }
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">lalalalalal</div>
+
+  </body>
+</html>
